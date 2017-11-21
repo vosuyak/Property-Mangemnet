@@ -10,6 +10,9 @@ import { SidenavComponent } from './dashboard/sidenav/sidenav.component';
 import { PreviewboardComponent } from './dashboard/previewboard/previewboard.component';
 import { PropertycountComponent } from './dashboard/propertycount/propertycount.component';
 import { HomeNavComponent } from './home-nav/home-nav.component';
+import { PropertyCountComponent } from './property-count/property-count.component';
+import { TenantCountComponent } from './tenant-count/tenant-count.component';
+import { FinanceCountComponent } from './finance-count/finance-count.component';
 
 
 
@@ -20,7 +23,10 @@ import { HomeNavComponent } from './home-nav/home-nav.component';
     SidenavComponent,
     PreviewboardComponent,
     PropertycountComponent,
-    HomeNavComponent
+    HomeNavComponent,
+    PropertyCountComponent,
+    TenantCountComponent,
+    FinanceCountComponent
   ],
   imports: [
     BrowserModule,
