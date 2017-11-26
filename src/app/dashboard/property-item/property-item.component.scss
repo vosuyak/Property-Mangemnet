@@ -1,0 +1,40 @@
+.properties{
+    .text-center{
+        font-weight: bold;
+    }
+    .property{
+            .address{
+
+            }
+            .location{
+
+            }
+            .zip{
+
+            }
+            .leaseing{
+
+            }
+            .bedroom{
+                &:after{
+                    font-family: FontAwesome;
+                    content: '\f236';
+                }
+            }
+            .bathroom{
+                &:after{
+                    font-family: FontAwesome;
+                    content: '\f2cd ';
+                }
+            }
+            .unit{
+
+            }
+            .rent{
+                &:before{
+                    font-family: FontAwesome;
+                    content: '\f155 ';
+                }
+            }
+    }
+}

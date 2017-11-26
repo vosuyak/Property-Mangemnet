@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from "../../services/data.service";
+import { PropertyItem } from "../../models/property";
 
 @Component({
   selector: 'app-previewboard',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PreviewboardComponent implements OnInit {
 
-  constructor() { }
+  properties;
+  constructor(public data:DataService) { }
 
   ngOnInit() {
+    this.data.getProperties().subscribe(properties => {
+      this.properties = properties
+    })
   }
 
 }

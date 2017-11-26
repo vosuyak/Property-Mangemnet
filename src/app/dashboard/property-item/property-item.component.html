@@ -1,0 +1,35 @@
+<table class="table"  *ngIf="properties?.length > 0; else noProperties">
+    <thead>
+      <tr>
+        <th scope="col">Address</th>
+        <th scope="col">City</th>
+        <th scope="col">Zip</th>
+        <th scope="col">Lease</th>
+        <th scope="col">Bedroom</th>
+        <th scope="col">Bathroom</th>
+        <th scope="col">Rent</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let property of properties ">
+        <td>{{property.address | slice:0:20}}...</td>
+        <td>{{property.city}}, {{property.state}}</td>
+        <td>{{property.zip}}</td>
+        <td>{{property.lease}}</td>
+        <td>{{property.bedroom}}</td>
+        <td>{{property.bathroom}}</td>
+        <td>{{property.rent }}</td>
+        <td>
+            <i  (click)="deleteProperty($event, property)" class="fa fa-trash" aria-hidden="true"></i>            
+        </td>    
+      </tr>
+    </tbody>
+  </table>
+
+<ng-template #noProperties>
+  <hr>
+  <h5>Currerntly no Properties</h5>
+  <hr>
+</ng-template>
+

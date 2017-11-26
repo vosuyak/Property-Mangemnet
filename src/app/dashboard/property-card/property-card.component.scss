@@ -1,0 +1,19 @@
+.card-body{
+    h4{
+        font-size: 1.3em;
+    }
+    ul{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        li{
+            width: 33%;
+            display: inline;
+        }
+    }
+}
+.list-group{
+    .list-group-item{
+        padding: .45rem 1rem;
+    }
+}

@@ -1,0 +1,45 @@
+  <h2>Add Property</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Address" 
+      [(ngModel)]="property.address" name="address" >
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="City"
+      [(ngModel)]="property.city" name="city" >      
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="State"
+      [(ngModel)]="property.state" name="state">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Zip"
+      [(ngModel)]="property.zip" name="zip">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Description"
+      [(ngModel)]="property.description" name="description">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Monthly Rent"
+      [(ngModel)]="property.rent" name="rent">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Leasing Length"
+      [(ngModel)]="property.lease" name="lease">
+    </div>
+    <div class="form-group">
+      <input type="number" class="form-control" placeholder="Bedroom"
+      [(ngModel)]="property.bedroom" name="bedroom">
+    </div>
+    <div class="form-group">
+      <input type="number" class="form-control" placeholder="Bathroom"
+      [(ngModel)]="property.bathroom" name="bathroom">
+    </div>
+    <div class="form-group">
+      <input type="number" class="form-control" placeholder="Unit"
+      [(ngModel)]="property.unit" name="unit">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+  
